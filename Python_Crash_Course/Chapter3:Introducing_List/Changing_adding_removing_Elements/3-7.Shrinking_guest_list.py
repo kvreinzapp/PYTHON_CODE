@@ -1,0 +1,56 @@
+guest = ['MR.Du', 'MS.White', "MS.Lee", "MR.Klaus"]
+invite_msg = "would you like to have a dinner with me?"
+print("[Invite who:]")
+print(guest)
+print(f"{guest[0]}, {invite_msg}")
+print(f"{guest[1]}, {invite_msg}")
+print(f"{guest[2]}, {invite_msg}")
+print(f"{guest[3]}, {invite_msg}")
+
+print(
+    f"\n[!]Oops, {guest[2]} can not come in, maybe I can invite Zack wo here\n")
+guest[2] = 'MR.Zack'
+print(guest)
+print("[Inviration message:]")
+print(f"{guest[0]}, {invite_msg}")
+print(f"{guest[1]}, {invite_msg}")
+print(f"{guest[2]}, {invite_msg}")
+print(f"{guest[3]}, {invite_msg}")
+
+print("\n[!]Guys I found a bigger table, we can have three more person!\n")
+guest.insert(0, 'Joey')
+print(guest)
+guest.insert(2, 'Ross')
+print(guest)
+guest.append('Chandler')
+print(guest)
+print("[Inviration message:]")
+print(f"{guest[0]}, {invite_msg}")
+print(f"{guest[1]}, {invite_msg}")
+print(f"{guest[2]}, {invite_msg}")
+print(f"{guest[3]}, {invite_msg}")
+print(f"{guest[4]}, {invite_msg}")
+print(f"{guest[5]}, {invite_msg}")
+print(f"{guest[6]}, {invite_msg}")
+
+print("\n[!]I can only invite 2 guest")
+out1 = guest.pop()
+out2 = guest.pop()
+out3 = guest.pop()
+out4 = guest.pop()
+out5 = guest.pop()
+print("[Inviration message:]")
+print(guest)
+print("Sorry about that,", out1)
+print("Sorry about that,", out2)
+print("Sorry about that,", out3)
+print("Sorry about that,", out4)
+print("Sorry about that,", out5)
+print("You are still invited,", guest[0])
+print("You are still invited,", guest[1])
+
+print("\n[!]Now they are all gone")
+print("[Inviration message:]")
+del guest[0]
+del guest[0]
+print(guest)
