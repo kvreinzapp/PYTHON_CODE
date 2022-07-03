@@ -57,7 +57,11 @@ for player in players[:3]:
 ##### copy it 
 use `friend_foods = my_foods[:]`
 instead of `friend_foods = my_foods`
-
+###### copy using list comprehension:
+```python
+current_users = ['admin', 'klaus', 'leoNARDO', 'zack','Chain']
+current_users_lower=[users.lower() for user in current_users ]
+```
 #### what about tuple
 just like a list, but use ==parentheses==
 ```
