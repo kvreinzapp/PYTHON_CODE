@@ -1,2 +1,1 @@
-print('heelo', end=":")
-print('man')
+print("fdff" + "fdfd")
