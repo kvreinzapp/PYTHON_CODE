@@ -1,1 +1,1 @@
-print("fdff" + "fdfd")
+input('?')
