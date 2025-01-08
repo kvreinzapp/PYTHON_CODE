@@ -1,1 +1,2 @@
-input('?')
+print('hek\n')
+print('man')
