@@ -1,0 +1,4 @@
+.ok_history
+.ok_messages
+__pycache__/
+tests/__pycache__/
