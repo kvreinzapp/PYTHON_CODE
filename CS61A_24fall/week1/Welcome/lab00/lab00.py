@@ -5,4 +5,4 @@ def twenty_twenty_four():
     >>> twenty_twenty_four()
     2024
     """
-    return 2000 + 20 + 3 + 1
+    return 0 + 1 + 1 + 2 + 3 + 5 + 8 + 13 + 21 + 34 + 55 + 89 + 144 + 233 + 377 + 610 + 428

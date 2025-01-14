@@ -24,7 +24,39 @@ def fib_expression(n):
     2
     3
     Till 4th number which is 3, total = 7.
+    >>> fib_expression(12)
+    0
+    1
+    1
+    2
+    3
+    5
+    Till 5th number which is 5, total = 12.
+    >>> fib_expression(13)
+    0
+    1
+    1
+    2
+    3
+    5
+    Till 5th number which is 5, total = 12.
+    >>> fib_expression(21)
+    0
+    1
+    1
+    2
+    3
+    5
+    8
+    Till 6th number which is 8, total = 20.
     """
+    total, k = 0, 0
+    while (total + fib(k) <= n):
+        print(fib(k), " +", end="")
+        total += fib(k)
+        k = k + 1
+    print(f"Till {k-1}th number which is {fib(k-1)}, total = {total}.")
+
     total, k = 0, 0
     while (total < n):
         total = total + fib(k)
@@ -33,6 +65,7 @@ def fib_expression(n):
         print(fib(k))
         k = k + 1
     print(f"Till {k-1}th number which is {fib(k-1)}, total = {total-fib(k)}.")
+    print(f"Next fib is {fib(k)}, add it to total, you will got {total}")
 
 
 """
